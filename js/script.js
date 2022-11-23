@@ -1,4 +1,5 @@
-
+const divElem = document.getElementById('test');
+var br = document.createElement("br");
 
 for(let i=1; i <= 100; i++) {
     let output = '';
@@ -13,5 +14,7 @@ for(let i=1; i <= 100; i++) {
         output = i;
     }
 
-    console.log(output)
+    divElem.append(output);
+    divElem.innerHTML += '<br>'
+    console.log(output);
 }
